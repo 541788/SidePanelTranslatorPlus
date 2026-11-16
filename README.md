@@ -133,7 +133,7 @@ Token 只保存在本机浏览器的 `chrome.storage.local`，不会上传到任
 
 ## 来源与致谢
 
-- 基础项目：[Side Panel Translator](https://github.com/) 0.3.0，本项目复用了其后台翻译管线与设置页构建产物。
+- 基础项目：TransHono 的 Side Panel Translator 0.3.0（[Chrome 应用商店页面](https://chromewebstore.google.com/detail/dllipbbfngpnnmdomfoomnifgalleaig)），本项目复用了其后台翻译管线与设置页构建产物。
 - 墨墨云词本能力基于 [墨墨背单词开放 API](https://open.maimemo.com/)。
 
 如原项目作者对分发方式有异议，请通过 Issue 联系，我会立即调整或删除。
