@@ -1,0 +1,37 @@
+{
+   "action": {
+      "default_title": "Side Panel Translator Plus"
+   },
+   "background": {
+      "service_worker": "background.js"
+   },
+   "content_scripts": [
+      {
+         "all_frames": false,
+         "js": [ "plus/languages.js", "plus/settings.js", "plus/tts.js", "plus/wordbook.js", "plus/selection.js" ],
+         "matches": [ "<all_urls>" ],
+         "run_at": "document_idle"
+      }
+   ],
+   "default_locale": "en",
+   "description": "Translate in the side panel, with read-aloud, translate-on-select, and a wordbook that syncs to Maimemo.",
+   "host_permissions": [ "https://*.deepl.com/*", "https://*.googleapis.com/*", "https://*.microsofttranslator.com/*", "https://transmart.qq.com/*", "https://translate.volcengine.com/*", "https://api.openai.com/*", "https://api.x.ai/*", "https://api.deepseek.com/*", "https://api.moonshot.cn/*", "https://open.maimemo.com/*" ],
+   "icons": {
+      "128": "icons/128.png",
+      "16": "icons/16.png",
+      "32": "icons/32.png",
+      "48": "icons/48.png"
+   },
+   "manifest_version": 3,
+   "name": "Side Panel Translator Plus",
+   "optional_host_permissions": [ "\u003Call_urls>" ],
+   "options_ui": {
+      "open_in_tab": true,
+      "page": "options.html"
+   },
+   "permissions": [ "storage", "unlimitedStorage", "sidePanel", "contextMenus" ],
+   "side_panel": {
+      "default_path": "sidepanel.html"
+   },
+   "version": "0.5.0"
+}
